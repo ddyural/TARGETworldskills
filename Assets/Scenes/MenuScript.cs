@@ -9,6 +9,8 @@ public class MenuScript : MonoBehaviour
     public GameObject AdminScreen;
     public GameObject TutorScreen;
     public GameObject StudentScreen;
+    public GameObject AddUserScreen;
+    public GameObject AddTaskScreen;
     public GameObject inputField1;
     public GameObject inputField2;
 
@@ -54,6 +56,8 @@ public class MenuScript : MonoBehaviour
         AdminScreen.SetActive(false);
         TutorScreen.SetActive(false);
         StudentScreen.SetActive(false);
+        AddUserScreen.SetActive(false);
+        AddTaskScreen.SetActive(false);
     }
 
     public void OpenScreenAdmin()
@@ -108,6 +112,31 @@ public class MenuScript : MonoBehaviour
         
 
     }
+
+    public void OpenScreenAddUser()
+    {
+        HideAllScreens();
+        AddUserScreen.SetActive(true);
+    }
+
+    public void OpenScreenAddTask()
+    {
+        HideAllScreens();
+        AddTaskScreen.SetActive(true);
+    }
+
+    public void BackToAdmin()
+    {
+        HideAllScreens();
+        AdminScreen.SetActive(true);
+    }
+
+    public void BackToTutor()
+    {
+        HideAllScreens();
+        TutorScreen.SetActive(true);
+    }
+
 
     public void HowWorksLoginProcess()
     {
