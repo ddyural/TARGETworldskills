@@ -11,6 +11,11 @@ public class MenuScript : MonoBehaviour
     public GameObject StudentScreen;
     public GameObject AddUserScreen;
     public GameObject AddTaskScreen;
+    public GameObject TheoryScreen;
+    public GameObject TestScreen;
+    public GameObject ControlScreen;
+    public GameObject ResultScreen;
+
     public GameObject inputField1;
     public GameObject inputField2;
 
@@ -53,11 +58,19 @@ public class MenuScript : MonoBehaviour
     public void HideAllScreens()
     {
         MainMenu.SetActive(false);
+
         AdminScreen.SetActive(false);
         TutorScreen.SetActive(false);
         StudentScreen.SetActive(false);
+
         AddUserScreen.SetActive(false);
+
         AddTaskScreen.SetActive(false);
+
+        TheoryScreen.SetActive(false);
+        TestScreen.SetActive(false);
+        ControlScreen.SetActive(false);
+        ResultScreen.SetActive(false);
     }
 
     public void OpenScreenAdmin()
@@ -125,17 +138,30 @@ public class MenuScript : MonoBehaviour
         AddTaskScreen.SetActive(true);
     }
 
-    public void BackToAdmin()
+    public void OpenTheory ()
     {
         HideAllScreens();
-        AdminScreen.SetActive(true);
+        TheoryScreen.SetActive(true);
     }
 
-    public void BackToTutor()
+    public void OpenTest ()
     {
         HideAllScreens();
-        TutorScreen.SetActive(true);
+        TestScreen.SetActive(true);
     }
+
+    public void OpenControl ()
+    {
+        HideAllScreens();
+        ControlScreen.SetActive(true);
+    }
+
+    public void OpenResult ()
+    {
+        HideAllScreens();
+        ResultScreen.SetActive(true);
+    }
+
 
 
     public void HowWorksLoginProcess()
