@@ -36,6 +36,8 @@ public class MenuScript : MonoBehaviour
     void Start()
     {
         dictAdmins.Add("Admin", "Admin");
+        dictTutors.Add("T", "T");
+        dictStudents.Add("S", "S");
         HideAllScreens();
         MainMenu.SetActive(true);
     }
